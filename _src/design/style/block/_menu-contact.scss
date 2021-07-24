@@ -1,0 +1,30 @@
+.menu-contact {
+  display: flex;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, .493);
+  }
+}
+
+.menu-contact__item {
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 48px;
+
+    @media (max-width: $sl) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.menu-contact__link {
+  &--mail {
+    font-family: $ff-rob;
+  }
+}

@@ -1,0 +1,52 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 58px;
+  height: 42px;
+
+  background-image: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 100%;
+
+    border: 1px solid #fff;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translate(0);
+
+    fill: #fff;
+  }
+
+  &:hover {
+    svg {
+      animation: .5s linear infinite alternate forwards  arrowBounce;
+      @media (max-width: $lg) {
+        animation: none;
+      }
+    }
+  }
+
+  &--orange {
+    &::before {
+      border-color: #ff8600;
+    }
+
+    svg {
+      fill: #ff8600;
+    }
+  }
+}
+
+.swiper-button-next {
+  transform: scale(-1, 1);
+}

@@ -1,0 +1,27 @@
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.4;
+  font-family: $ff-rob;
+  color: $c-accent;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+
+  user-select: none;
+
+  @media (max-width: $md) {
+    font-size: 38px;
+  }
+
+  &--size {
+    &--md {
+      margin-bottom: 14px;
+
+      font-size: 36px;
+      letter-spacing: .02em;
+
+      @media (max-width: $md) {
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@@include('block/head.html')
+@@include('block/header.html')
+
+<main class="main">
+  <div class="container">
+    <!-- /////////////////////////////////////////////////// agitation -->
+    <section class="agitation">
+      <h1 class="visually-hidden">Slam | Разработка как спорт. Важен только результат</h1>
+      <div class="agitation__swiper-container swiper-container">
+        <ul class="agitation__swiper-wrapper swiper-wrapper list-reset">
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img" src="./design/images/agitation-slider/slide-1.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер первого экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="./design/images/agitation-slider/slide-2.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер второго экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="./design/images/agitation-slider/slide-3.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер третьего экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="./design/images/agitation-slider/slide-4.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер четвертого экрана</span>
+            </a>
+          </li>
+          <li class="agitation__swiper-slide swiper-slide">
+            <img class="agitation__img swiper-lazy" src="#" data-src="./design/images/agitation-slider/slide-5.jpg" alt="img">
+            <a class="agitation__link" href="#">
+              <span class="agitation__phrase">Слайдер пятого экрана</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="agitation__swiper-button-prev swiper-button-prev">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="agitation__swiper-button-next swiper-button-next">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div><!--/agitation__swiper-container-->
+    </section>
+
+    <!-- /////////////////////////////////////////////////// promo -->
+    <section class="promo">
+      <h2 class="promo__title title">Promo block</h2>
+      <div class="product">
+        <div class="product__swiper-contaner swiper-container">
+          <ul class="product__swiper-wrapper swiper-wrapper list-reset">
+
+            @@include('block/product-cards.html')
+
+          </ul>
+
+          <div class="product__swiper-pagination swiper-pagination"></div>
+
+        </div><!--/product__swiper-contaner-->
+
+        <div class="product__swiper-button-prev swiper-button-prev swiper-button-prev--orange">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="product__swiper-button-next swiper-button-next swiper-button-next--orange">
+          <svg aria-hidden="true" width="46" height="43">
+            <use xlink:href="./design/images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div><!--/product-->
+    </section>
+
+    <!-- /////////////////////////////////////////////////// form -->
+    <section>
+      <h3 class="title title--size--md">Form style</h3>
+      <form class="form" action="#">
+        <div class="form__col">
+          <div class="radio-group">
+            <input class="radio-group__input visually-hidden" name="radio" value="raio" type="radio" checked id="radio">
+            <label class="radio-group__label" for="radio" data-js="checkbox-label">В корзину</label>
+          </div>
+          <div class="radio-group">
+            <input class="radio-group__input visually-hidden" name="radio" value="raio2" type="radio" id="radio2">
+            <label class="radio-group__label" for="radio2" data-js="checkbox-label">В корзину</label>
+          </div>
+        </div>
+
+        <div class="form__col">
+          <div class="checkbox-group">
+            <input class="checkbox-group__input visually-hidden" type="checkbox" checked id="checkbox">
+            <label class="checkbox-group__label" for="checkbox" data-js="checkbox-label">В корзину</label>
+          </div>
+          <div class="checkbox-group">
+            <input class="checkbox-group__input visually-hidden" type="checkbox" id="checkbox2">
+            <label class="checkbox-group__label" for="checkbox2" data-js="checkbox-label">В корзину</label>
+          </div>
+        </div>
+      </form>
+    </section>
+</div><!--/container-->
+</main>
+
+@@include('block/scripts.html')

@@ -1,0 +1,69 @@
+.product {
+  position: relative;
+
+  padding: 0 80px;
+
+  @media (max-width: $lg) {
+    margin: 0 -15px;
+    padding: 0;
+  }
+}
+
+.product__swiper-contaner {
+  width: 100%;
+  max-width: 1316px;
+  margin: 0 auto;
+  padding: 10px 0 125px;
+
+  @media (max-width: $md) {
+    padding-bottom: 110px;
+  }
+}
+
+.product__swiper-wrapper {
+  position: relative;
+  z-index: 200;
+}
+
+.product__swiper-slide {
+  position: relative;
+
+  width: 329px;
+  height: 460px;
+  padding: 0 10px;
+
+  @media (max-width: $md) {
+    height: auto;
+  }
+}
+
+.product__card {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.product__swiper-button-prev,
+.product__swiper-button-next {
+  top: 37%;
+
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
+.product__swiper-button-prev {
+  left: 0;
+}
+
+.product__swiper-button-next {
+  right: 0;
+}
+
+.product__swiper-pagination {
+  bottom: 66px !important;
+  z-index: 100;
+}

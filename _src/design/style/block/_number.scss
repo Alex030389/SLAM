@@ -1,0 +1,45 @@
+.number {
+  position: relative;
+
+  svg {
+    pointer-events: none;
+  }
+}
+
+.number__btn {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 100%;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.number__btn--minus {
+  left: 0;
+}
+
+.number__btn--plus {
+  right: 0;
+}
+
+.number__control {
+  width: 100%;
+  height: 40px;
+  padding: 6px 60px;
+
+  font-size: 18px;
+  text-align: center;
+
+  background-color: #fafafa;
+  border: none;
+  border-radius: 50em;
+  outline: none;
+}

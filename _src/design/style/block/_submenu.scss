@@ -1,0 +1,19 @@
+.submenu {
+}
+
+.submenu__list {
+  padding: 20px 30px;
+
+  background-color: $c-accent;
+  border-radius: 20px;
+}
+
+.submenu__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.submenu__link {
+  white-space: nowrap;
+}

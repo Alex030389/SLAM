@@ -1,0 +1,46 @@
+.promo {
+  position: relative;
+
+  margin-bottom: 76px;
+
+  @media (max-width: $md) {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -43px;
+    bottom: -220px;
+
+    width: 600px;
+    height: 600px;
+
+    background: url(../images/ui/large-logo.svg) center center no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 1710px) {
+      right: 0;
+    }
+
+    @media (max-width: $lg) {
+      bottom: -100px;
+
+      width: 400px;
+      height: 400px;
+    }
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.promo__title {
+  margin-bottom: 49px;
+  padding-left: 14px;
+
+  @media (max-width: $md) {
+    margin-bottom: 20px;
+  }
+}

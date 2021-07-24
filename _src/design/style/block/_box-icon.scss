@@ -1,0 +1,80 @@
+.box-icon {
+  position: relative;
+
+  svg {
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .35));
+
+    transition: .2s;
+
+    fill: $c-accent;
+  }
+
+  &:hover {
+    svg {
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0));
+
+      fill: #ff8600;
+
+      @media (max-width: $lg) {
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .35));
+
+        fill: $c-accent;
+      }
+    }
+  }
+
+  &--not-hover {
+    &:hover {
+      svg {
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .35));
+
+        transition: .2s;
+
+        fill: $c-accent;
+      }
+    }
+  }
+}
+
+.box-icon__inner {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+
+  svg {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: $md) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.box-icon__number {
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  z-index: 10;
+
+  width: 20px;
+
+  font-size: 11px;
+  line-height: 1;
+  font-family: $ff-mont;
+  text-align: center;
+  color: #fff;
+
+  @media (max-width: $md) {
+    top: 3px;
+    left: 8px;
+
+    font-size: 8px;
+  }
+}

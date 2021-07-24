@@ -1,0 +1,92 @@
+.agitation {
+  margin-bottom: 36px;
+}
+
+.agitation__swiper-container {
+}
+
+.agitation__swiper-wrapper {
+}
+
+.agitation__swiper-slide {
+  position: relative;
+
+  height: 800px;
+
+  background-color: #dfc2dc;
+
+  @media (max-width: $sl) {
+    height: 600px;
+  }
+
+  @media (max-width: $md) {
+    height: 400px;
+  }
+}
+
+.agitation__img {
+  width: 100%;
+  height: 100%;
+
+  font-family: "object-fit: cover";
+
+  object-fit: cover;
+}
+
+.agitation__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px 150px 90px;
+
+  background-color: rgba(0, 0, 0, .2);
+
+  @media (max-width: $md) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.agitation__phrase {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.1;
+  font-family: $ff-rob;
+  text-align: center;
+  color: #fff;
+  letter-spacing: .02em;
+
+  @media (max-width: $lg) {
+    font-size: 40px;
+  }
+}
+
+.agitation__swiper-button-prev,
+.agitation__swiper-button-next {
+  top: 48%;
+
+  @media (max-width: $md) {
+    top: auto;
+    bottom: 20px;
+  }
+}
+
+.agitation__swiper-button-prev {
+  left: 50px;
+}
+
+.agitation__swiper-button-next {
+  right: 50px;
+}

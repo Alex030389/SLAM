@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__col {
+  flex-basis: 188px;
+
+  &:first-child {
+    margin-right: 30px;
+  }
+}
